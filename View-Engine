@@ -1,0 +1,28 @@
+VIEW ENGINE and It's WORKING
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A view engine is like a special tool that helps a web application show its information in a nice and organized way to users. Imagine you have a bunch of puzzle pieces (data) that need to be put together to create a complete picture (a webpage). A view engine helps arrange these puzzle pieces in the right order so that users see a clear and attractive picture on their screens.
+
+Here's how it works in simple words:
+
+1. Data Preparation: Your web application gathers all the important information it needs to show on a webpage. This could be text, images, buttons, and more.
+
+2. Template: The view engine uses a template as a guide. Think of this template as a coloring book with empty shapes. It outlines where each piece of information should go on the webpage.
+
+3. Filling the Template: The view engine takes the information from the application and places it into the template's empty shapes. It's like coloring inside the lines of the coloring book.
+
+4. Arrangement: The view engine organizes the information based on the template. It decides where text should be, where images should go, and how everything should be arranged.
+
+5. Creating the Webpage: After putting all the pieces in the right places, the view engine creates a complete webpage that's ready to be shown to users.
+
+6. User's View: When a user opens their web browser and visits a webpage, they see the final result: a nicely formatted page with all the information displayed in a way that makes sense.
+
+7. Changes and Updates: If the information changes or updates, the view engine can redo the process, putting the new pieces in the right spots according to the template.
+
+In short, a view engine is like an expert puzzle assembler. It takes the information your web application wants to show and arranges it nicely on a webpage so that users can easily understand and enjoy it.
+
+
+
+
+
+ 

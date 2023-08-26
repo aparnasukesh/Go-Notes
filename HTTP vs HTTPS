@@ -1,0 +1,57 @@
+                             HTTPS
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTTPS stands for "Hypertext Transfer Protocol Secure." It is a secure version of the standard HTTP protocol that is used to transmit data between a web browser and a web server over the internet. HTTPS adds an extra layer of security by encrypting the data that is exchanged between the client (browser) and the server, making it significantly more difficult for unauthorized individuals to intercept and access the transmitted data.
+
+The main features of HTTPS include:
+
+Encryption: HTTPS uses encryption protocols, most commonly SSL (Secure Sockets Layer) or its successor, TLS (Transport Layer Security), to encrypt the data being transmitted. This means that any data sent between the client and the server is encoded in a way that makes it extremely difficult for anyone to decipher without the appropriate decryption key.
+
+Data Integrity: In addition to encryption, HTTPS ensures data integrity. This means that the data being transmitted cannot be tampered with or altered by malicious actors while it is in transit. If any modifications occur during transmission, the receiver will be able to detect them.
+
+Authentication: HTTPS provides a level of authentication by verifying the identity of the server. This helps prevent man-in-the-middle attacks, where attackers could impersonate the server to intercept data. Websites using HTTPS obtain an SSL/TLS certificate from a trusted Certificate Authority (CA), which validates their identity.
+
+Trust Indicators: Modern web browsers display visual indicators, such as a padlock icon or "Secure" label, in the address bar to signal that a website is using HTTPS. This reassures users that their connection to the website is secure and that their data is protected.
+
+SEO Benefits: Search engines like Google prioritize secure websites in search results. This means that websites using HTTPS may receive a small SEO boost compared to their HTTP counterparts.
+
+To access a website using HTTPS, you simply need to type "https://" before the website's URL in your browser's address bar. For example, "https://www.example.com." If the website supports HTTPS, the connection will be established securely. If a website does not support HTTPS, your browser may display a warning indicating that the connection is not secure.
+
+Overall, HTTPS is a crucial component of web security, particularly when transmitting sensitive information such as login credentials, personal data, and payment details. It ensures that the data exchanged between users and websites remains confidential and protected from eavesdropping and tampering.
+                             
+                             
+                             
+                            DIFFERENCE BETWEEN HTTP and HTTPS
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The main difference between HTTP (Hypertext Transfer Protocol) and HTTPS (Hypertext Transfer Protocol Secure) lies in the level of security and encryption applied to the communication between a web browser and a web server. Here's a breakdown of the key differences:
+
+1.Security and Encryption:
+
+HTTP: Data transmitted over regular HTTP is sent in plain text, which means that anyone with the right tools and access to the network can intercept and read the data being exchanged between the client (browser) and the server. This lack of encryption makes HTTP susceptible to eavesdropping and data interception.
+HTTPS: HTTPS employs encryption protocols like SSL (Secure Sockets Layer) or TLS (Transport Layer Security) to secure the data transmitted between the client and the server. This encryption ensures that the data is encoded and can only be deciphered by those with the appropriate decryption key. This makes it highly difficult for unauthorized individuals to intercept or understand the data.
+
+2.Data Integrity:
+
+HTTP: Since data transmitted over HTTP is not encrypted, it's vulnerable to tampering during transmission. Malicious actors can potentially modify the data before it reaches its intended destination.
+HTTPS: HTTPS not only encrypts the data but also ensures its integrity. If any modifications or alterations occur during transmission, the recipient can detect these changes and reject the compromised data.
+
+3.Authentication and Trust:
+
+HTTP: Regular HTTP connections do not provide any means of authenticating the identity of the server. This creates a potential vulnerability where attackers could impersonate the server and intercept or manipulate the data.
+HTTPS: HTTPS connections involve the use of SSL/TLS certificates issued by trusted Certificate Authorities (CAs). These certificates verify the identity of the server, confirming that it is legitimate and not an imposter. The presence of a valid certificate helps users trust that they are connecting to the correct website.
+
+4.User Trust Indicators:
+
+HTTP: Browsers do not provide any special visual indicators to indicate that a connection is not secure when using regular HTTP. Users may not be aware that their data is transmitted in plain text.
+HTTPS: Modern web browsers display visual indicators such as a padlock icon, a "Secure" label, or a color change in the address bar to signal that a website is using HTTPS. These indicators help users recognize that their connection is secure and their data is protected.
+
+5.SEO and Ranking:
+
+HTTP: Some search engines may not prioritize websites using plain HTTP as highly as those using HTTPS. This could impact a website's search engine ranking.
+HTTPS: Websites using HTTPS are often favored by search engines, potentially leading to a small boost in search rankings.
+
+In summary, the primary difference between HTTP and HTTPS is the level of security and encryption applied to the communication. HTTPS offers encryption, data integrity, authentication, and user trust indicators, making it a more secure choice for transmitting sensitive data over the internet.
+   
+
+

@@ -1,0 +1,119 @@
+            "net/http" 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+In Go, the "net/http" package is a core package that provides a comprehensive set of tools for building HTTP servers and clients. It's part of the standard library and allows you to create web servers, handle incoming HTTP requests, and make HTTP requests to external services.
+
+Here are the main components and concepts of the "net/http" package:
+
+1. HTTP Server:
+
+You can create an HTTP server using the 'http.Server' struct and the 'http.ListenAndServe' function. This allows you to listen for incoming HTTP requests and handle them using custom handler functions.
+
+2. Handler Functions:
+
+In Go, an HTTP handler function is any function that implements the 'http.Handler' interface. The 'http.HandlerFunc' type is a common way to create simple handler functions. These functions receive an 'http.ResponseWriter' and an 'http.Request' as parameters, allowing you to generate responses and process incoming requests.
+
+3. Routes and Multiplexer:
+
+The "net/http" package includes a default multiplexer ('http.ServeMux') that allows you to define routes and associate them with specific handler functions. The multiplexer matches incoming requests to the appropriate handler based on the URL path.
+
+4. Request and Response Handling:
+
+The 'http.Request' struct represents an incoming HTTP request and provides methods to access request headers, query parameters, and request bodies. The 'http.ResponseWriter' interface allows you to construct and send HTTP responses.
+
+5. HTTP Methods and Routing:
+
+The package supports various HTTP methods like GET, POST, PUT, DELETE, etc. You can use the multiplexer to route incoming requests to the appropriate handler based on the HTTP method and the URL path.
+
+6. HTTP Clients:
+
+The "net/http" package also provides facilities for making HTTP requests as a client. You can create an 'http.Client' and use it to send GET, POST, and other HTTP requests to external services. The 'http.Get' function is a convenient way to make simple GET requests.
+
+7. Server Configuration:
+
+The 'http.Server' struct allows you to configure various server parameters such as timeouts, maximum request headers, and more.
+
+Here's a simple example of creating an HTTP server using the "net/http" package:
+
+--------------------------example-------------------------------------------------
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+func main() {
+	// Define a handler function for the root URL
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "Hello, World!")
+	})
+
+	// Start the HTTP server on port 8080
+	http.ListenAndServe(":8080", nil)
+}
+----------------------------------------------------------------------------------
+
+In this example, the 'http.HandleFunc' function is used to associate the root URL ("/") with a simple handler function that responds with "Hello, World!" when the server receives a request at that URL. The server is started using 'http.ListenAndServe'.
+
+Remember that the "net/http" package offers much more functionality and flexibility for building both HTTP servers and clients. It's a powerful package that's widely used in the Go ecosystem for web development.
+----------------------------------------------------------------------------------------------
+
+2) WORKING OF "net/http" Package
+
+----------------------------------------------------------------------------------------------
+
+The "net/http" package in Go is used to build both HTTP servers and clients. It works by providing a set of abstractions and functions that handle the complexities of the HTTP protocol, making it easier for developers to create web applications, APIs, and interact with external services over the HTTP protocol.
+
+Here's how the "net/http" package works and why it's used:
+
+----> FOR BUILDINIG HTTP SERVERS:
+
+1. Server Initialization: You create an instance of 'http.Server' with configurations like the address to listen on, timeouts, and other settings.
+
+2. Handler Functions: You define one or more handler functions that will be responsible for processing incoming HTTP requests. These handlers implement the 'http.Handler' interface or are wrapped in 'http.HandlerFunc.'
+
+3. Multiplexer (Router): You use the 'http.ServeMux' to associate URL paths with specific handler functions. The multiplexer acts as a router, determining which handler should handle incoming requests based on the requested URL path.
+
+4. Server Start: You assign the multiplexer as the server's handler and start the server using 'server.ListenAndServe()'. The server listens for incoming requests on the specified address.
+
+5. Request Processing: When a request comes in, the server's multiplexer matches the request's URL path to the appropriate handler. The handler is then executed, receiving the 'http.ResponseWriter' to construct the response and the 'http.Request' to access request information.
+
+6. Response Generation: Inside the handler function, you can generate the response using methods provided by 'http.ResponseWriter'. You can set headers, write response content, and choose response status codes.
+
+7. Server Configuration: The 'http.Server' struct allows you to configure various aspects of the server, such as timeouts, maximum header sizes, and more.
+
+----> FOR BUILDING HTTP CLIENTS:
+
+1. Client Creation: You create an instance of 'http.Client', which is used to make HTTP requests to external services.
+
+2. Request Creation: You create an 'http.Request' specifying the request method, URL, headers, and optional request body.
+
+3. Request Sending: You use the 'http.Client' to send the created request using methods like 'client.Do(request)' or convenience methods like 'http.Get(url)'.
+
+Response Handling: The client receives an http.Response containing the response status, headers, and body. You can read the response body and handle any errors.
+--------------------------------------------------------------------------------------------
+
+3) WHY WE USE "net/http" Package
+
+--------------------------------------------------------------------------------------------
+
+The "net/http" package is used because:
+
+1. Simplicity: It abstracts the complexities of handling the HTTP protocol, allowing developers to focus on building their applications rather than dealing with low-level details.
+
+2. Standard Library: It's part of the Go standard library, so there's no need for external dependencies to build basic HTTP servers and clients.
+
+3. Flexibility: It provides a flexible framework for handling various HTTP methods, routing, middleware, and serving static files.
+
+4. Performance: While being user-friendly, it's designed to be efficient and performant, making it suitable for a wide range of applications.
+
+5. Uniform API: The same package can be used for building both servers and clients, ensuring a consistent programming experience.
+
+Overall, the "net/http" package is a foundational component of the Go programming language's ecosystem for web development and HTTP communication. It provides a high-level API that simplifies building robust and efficient HTTP servers and clients.
+
+
+
+
+
+

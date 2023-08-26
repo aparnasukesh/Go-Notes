@@ -1,0 +1,40 @@
+                             HTTP STATUS CODE 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTTP status codes are three-digit numbers that a web server sends as part of its response to an HTTP request made by a client (such as a web browser or application). These codes provide information about the outcome of the request and help both the client and server understand how to proceed.
+
+In simpler terms, think of HTTP status codes as messages that tell you what happened when you interact with a website. They're like little notes from the server explaining what's going on.
+
+Here's a breakdown of some common HTTP status codes and what they mean:
+
+In summary, HTTP status codes are like little messages from a website's server, explaining what happened when you made a request. They're a quick way to understand whether your request worked, if there's an issue, or if something has changed.
+
+1. 200 OK: The server successfully processed the request and returned the requested resource. Everything is fine.
+
+2. 201 Created: The request was successful, and a new resource was created as a result. For example, after submitting a form to create a new user account.
+
+3. 204 No Content: The server successfully processed the request, but there is no additional information to send back. It's often used in cases where the request didn't require a response body.
+
+4. 400 Bad Request: The server couldn't understand the request due to malformed syntax or other client-side errors.
+
+5. 401 Unauthorized: The request requires authentication, and the user hasn't provided valid credentials or hasn't logged in yet.
+
+6. 403 Forbidden: The server understood the request, but the server refuses to authorize it. The client doesn't have permission to access the requested resource.
+
+7. 404 Not Found: The server couldn't find the requested resource. This is the classic "page not found" error.
+
+8. 405 Method Not Allowed: The request method (like GET, POST, etc.) is not supported for the requested resource.
+
+9. 500 Internal Server Error: A generic error message indicating that something went wrong on the server's side. It's often used when the server encounters an unexpected condition that prevents it from fulfilling the request.
+
+10. 503 Service Unavailable: The server is temporarily unable to handle the request due to overloading or maintenance of the server. It's like saying, "I'm busy right now, come back later."
+
+11. 301 Moved Permanently: The requested resource has been moved to a new location, and you should update your bookmarks or links to the new URL.
+
+12. 302 Found (or 307 Temporary Redirect): The requested resource has been temporarily moved to a different location. The original URL might still be used in the future.
+
+These are just a few important HTTP status codes. There are many more, each serving a specific purpose to help communicate the outcome of an HTTP request between clients and servers.
+
+
+
+
