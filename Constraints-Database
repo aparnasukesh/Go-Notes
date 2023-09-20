@@ -1,0 +1,95 @@
+    CONSTRAINTS
+----------------------------------------------------------------------------------
+Database Constraints
+
+1) Definition: 
+===================
+
+Rules and conditions applied to a database table's columns to maintain data integrity and enforce business rules.
+
+2) Types:
+===================
+
+1. Primary Key: Ensures uniqueness and non-null values in one or more columns to uniquely identify rows.
+
+2. Unique: Enforces uniqueness but allows null values.
+
+3. Check: Specifies conditions that data in a column must satisfy.
+
+4. Foreign Key: Establishes relationships between tables, enforcing referential integrity.
+
+5. Not Null: Requires that a column cannot contain null values.
+
+6. Default: Provides default values for columns if no value is specified.
+
+----------------------------------------------------------------------------------
+3) Purpose:
+===================
+
+1. Maintain data quality.
+2. Enforce data validation.
+3. Support data integrity.
+4. Define relationships between tables.
+
+3) Examples:
+=====================
+
+1. Primary key ensures each employee has a unique ID.
+2. Unique constraint prevents duplicate email addresses.
+3. Check constraint validates date inputs.
+4. Foreign key links orders to customers in a sales database.
+5. Not null ensures required fields have values.
+6. Default sets a default shipping method for orders.
+
+
+4) Role in Database Design:
+=====================================================
+
+1. Integral for data consistency.
+2. Prevents data anomalies.
+3. Defines data relationships.
+4. Supports database normalization.
+----------------------------------------------------------------------------------
+
+5) Used in SQL: Added during table creation (`CREATE TABLE`) or later using `ALTER TABLE`.
+
+6) Views and Procedures: Constraints can also be applied to views and stored procedures for enhanced data security and validation.
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+In the context of databases, constraints are rules and conditions that are applied to a database table's columns to ensure data integrity and maintain the consistency and accuracy of the data stored in the table. Constraints help enforce business rules and prevent the insertion of invalid or inconsistent data into the database. There are several types of constraints commonly used in relational databases:
+
+1) Primary Key Constraint: 
+
+A primary key constraint ensures that each row in a table is uniquely identified by one or more columns. It enforces the uniqueness of values in these columns and ensures that they are not null. Primary keys are used to establish relationships between tables and to efficiently retrieve specific rows.
+
+2) Unique Constraint: 
+
+A unique constraint ensures that the values in one or more columns are unique across all rows in a table. Unlike a primary key, a unique constraint allows null values in the columns. It is often used to enforce uniqueness for non-primary key attributes.
+
+3) Check Constraint: 
+
+A check constraint defines a condition that values in a column or combination of columns must satisfy. It allows you to enforce business rules and data validation. For example, you can use a check constraint to ensure that a date column contains only future dates.
+
+4) Foreign Key Constraint: 
+
+A foreign key constraint establishes a relationship between two tables by specifying that the values in one table's column(s) must match the values in another table's column(s). It enforces referential integrity, ensuring that data consistency is maintained across related tables.
+
+5) Not Null Constraint: 
+
+A not null constraint ensures that a column cannot contain null values. It enforces the requirement that a value must be provided for the column when inserting or updating data.
+
+6) Default Constraint: 
+
+A default constraint specifies a default value for a column. If no value is explicitly provided for the column during insertion, the default value is used. This helps ensure that every row has a valid value for the column, even if it's not explicitly provided.
+
+Constraints are an integral part of database design and are used to define the rules and relationships that govern the data stored in the database. They help maintain data quality, prevent data anomalies, and support data integrity throughout the life cycle of the database. When designing a database schema, choosing and applying the appropriate constraints is crucial to ensuring the accuracy and reliability of the stored data.
+
+
+
+
+
+
+
+
